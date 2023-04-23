@@ -1,0 +1,12 @@
+Here are the issues with the code:
+
+1) The useState hook in the WrappedListComponent is being used incorrectly. Instead of setting the initial value of selectedIndex to null, it should be set to a number.
+
+2) The isSelected prop in the SingleListItem component is being set to selectedIndex instead of selectedIndex === index.
+
+3) In the SingleListItem component, the onClickHandler prop should be passed as a function instead of being called immediately.
+
+4) The propTypes declaration for the items prop in the WrappedListComponent is using the incorrect syntax.
+
+5) The memo function is being used incorrectly in the SingleListItem and WrappedListComponent components. The memo function should be used to memoize the function components themselves, not the functional components passed as props to those components.
+
